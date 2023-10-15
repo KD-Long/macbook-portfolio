@@ -49,25 +49,4 @@ npm run dev
 
 3. Open your web browser and navigate to http://localhost:3000 to access the project.
 
-4. For steps on how to intergrate CI into this project and have updates build to hostinger follow this [guide](https://dev.to/mwoodson11/create-deployment-pipeline-for-react-app-on-hostinger-5bc9).
 
-<br>
-
-## Workflow 
-
-<br>
-
-1. Git push from local --> main branch
-```bash
-git add --all
-git commit -m 'commmit msg'
-git push -u origin main
-```
-
-2. Github actions trigger build --> build branch (dist folder from $npm run build)
-
-3. Webhook event triggered --> hostinger
-
-4. Automatic deployment --> ~/public_html/_sub_macbook-portfolio/
-
-5. Configured sub domain [macbook-portfolio.kyledlong.com](https://macbook-portfolio.kyledlong.com) to point to "_sub_macbook-portfolio/" folder
